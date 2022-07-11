@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_country">United States of America</string>
+    <!--修改国家需要修改6处-->
+    <!--排序用，不需要翻译-->
+    <string-array name="area_code_selete_all">
+        <item>Taiwan =+886</item>
+        <item>Australia =+61</item>
+        <item>Brazil =+55</item>
+        <item>Canada =+1</item>
+        <item>China =+86</item>
+        <item>France =+33</item>
+        <item>Hong Kong =+852</item>
+        <item>Indonesia =+62</item>
+        <item>Japan =+81</item>
+        <item>Macao =+853</item>
+        <item>Malaysia =+60</item>
+        <item>Myanmar =+95</item>
+        <item>Peru =+51</item>
+        <item>Philippines =+63</item>
+        <item>Russia =+7</item>
+        <item>Singapore =+65</item>
+        <item>South Korea =+82</item>
+        <item>Thailand =+66</item>
+        <item>UK =+44</item>
+        <item>USA =+1</item>
+        <item>Vietnam =+84</item>
+        <item>China =+86</item>
+
+    </string-array>
+
+    <!--国家及区号选择-->
+    <string-array name="area_code_selete">
+        <item>China =+86</item>
+        <item>Taiwan =+886</item>
+        <item>Australia =+61</item>
+        <item>Brazil =+55</item>
+        <item>Canada =+1</item>
+        <item>China =+86</item>
+        <item>France =+33</item>
+        <item>Hong Kong =+852</item>
+        <item>Indonesia =+62</item>
+        <item>Japan =+81</item>
+        <item>Macao =+853</item>
+        <item>Malaysia =+60</item>
+        <item>Myanmar =+95</item>
+        <item>Peru =+51</item>
+        <item>Philippines =+63</item>
+        <item>Russia =+7</item>
+        <item>Singapore =+65</item>
+        <item>South Korea =+82</item>
+        <item>Thailand =+66</item>
+        <item>UK =+44</item>
+        <item>USA =+1</item>
+        <item>Vietnam =+84</item>
+
+    </string-array>
+
+    <!--国际及对应ISO-所有,去除China,避免China和Taiwan重复-->
+    <string-array name="area_code_all">
+        <item>Taiwan =TW</item>
+        <item>Australia =AU</item>
+        <item>Brazil =BR</item>
+        <item>Canada =CA</item>
+        <item>France =FR</item>
+        <item>Hong Kong =HK</item>
+        <item>Indonesia =ID</item>
+        <item>Japan =JP</item>
+        <item>Macao =MO</item>
+        <item>Malaysia =MY</item>
+        <item>Myanmar =MM</item>
+        <item>Peru =PE</item>
+        <item>Philippines =PH</item>
+        <item>Russia =RU</item>
+        <item>Singapore =SG</item>
+        <item>South Korea =KR</item>
+        <item>Thailand =TH</item>
+        <item>UK =GB</item>
+        <item>USA =US</item>
+        <item>Vietnam =VN</item>
+        <item>China =CN</item>
+
+    </string-array>
+
+    <!--通过国家去查找ISO，去除China,中國大陸避免China和Taiwan或者中國大陸和臺灣重复-->
+    <string-array name="area_all">
+        <item>Taiwan =TW</item>
+        <item>Australia =AU</item>
+        <item>Brazil =BR</item>
+        <item>Canada =CA</item>
+        <item>France =FR</item>
+        <item>Hong Kong =HK</item>
+        <item>Indonesia =ID</item>
+        <item>Japan =JP</item>
+        <item>Macao =MO</item>
+        <item>Malaysia =MY</item>
+        <item>Myanmar =MM</item>
+        <item>Peru =PE</item>
+        <item>Philippines =PH</item>
+        <item>Russia =RU</item>
+        <item>Singapore =SG</item>
+        <item>South Korea =KR</item>
+        <item>Thailand =TH</item>
+        <item>China =CN</item>
+        <item>UK =GB</item>
+        <item>USA =US</item>
+        <item>Vietnam =VN</item>
+        <item>臺灣 =TW</item>
+        <item>澳大利亞 =AU</item>
+        <item>巴西 =BR</item>
+        <item>加拿大 =CA</item>
+        <item>法國 =FR</item>
+        <item>香港 =HK</item>
+        <item>印度尼西亞 =ID</item>
+        <item>中國大陸 =CN</item>
+        <item>日本 =JP</item>
+        <item>澳門 =MO</item>
+        <item>馬來西亞 =MY</item>
+        <item>緬甸 =MM</item>
+        <item>秘魯 =PE</item>
+        <item>菲律賓 =PH</item>
+        <item>俄羅斯 =RU</item>
+        <item>新加坡 =SG</item>
+        <item>韓國 =KR</item>
+        <item>泰國 =TH</item>
+        <item>英國 =GB</item>
+        <item>美國 =US</item>
+        <item>越南 =VN</item>
+
+    </string-array>
+
+    <!--台湾二级菜单-->
+    <string-array name="area_second_taiwan">
+    <item>Taipei City</item>
+    <item>New Taipei City</item>
+    <item>Taoyuan City</item>
+    <item>Taichung City</item>
+    <item>Tainan City</item>
+    <item>Kaohsiung City</item>
+    <item>Keelung City</item>
+    <item>Hsinchu City</item>
+    <item>Chiayi City</item>
+    <item>Hsinchu County</item>
+    <item>Miaoli County</item>
+    <item>Changhua County</item>
+    <item>Nantou County</item>
+    <item>Yunlin County</item>
+    <item>Chiayi County</item>
+    <item>Pingtung County</item>
+    <item>Yilan County</item>
+    <item>Hualien County</item>
+    <item>Taitung County</item>
+    <item>Penghu County</item>
+    <item>Kinmen County</item>
+    <item>Lienchiang County</item>
+    </string-array>
+
+    <!--台湾二级菜单上传时候不需要翻译,无论中英文都可以获取到英文-->
+    <string-array name="area_second_upload">
+        <item>Taipei City =Taipei City</item>
+        <item>New Taipei City =New Taipei City</item>
+        <item>Taoyuan City =Taoyuan City</item>
+        <item>Taichung City =Taichung City</item>
+        <item>Tainan City =Tainan City</item>
+        <item>Kaohsiung City =Kaohsiung City</item>
+        <item>Keelung City =Keelung City</item>
+        <item>Hsinchu City =Hsinchu City</item>
+        <item>Chiayi City =Chiayi City</item>
+        <item>Hsinchu County =Hsinchu County</item>
+        <item>Miaoli County =Miaoli County</item>
+        <item>Changhua County =Changhua County</item>
+        <item>Nantou County =Nantou County</item>
+        <item>Yunlin County =Yunlin County</item>
+        <item>Chiayi County =Chiayi County</item>
+        <item>Pingtung County =Pingtung County</item>
+        <item>Yilan County =Yilan County</item>
+        <item>Hualien County =Hualien County</item>
+        <item>Taitung County =Taitung County</item>
+        <item>Penghu County =Penghu County</item>
+        <item>Kinmen County =Kinmen County</item>
+        <item>Lienchiang County =Lienchiang County</item>
+        <item>臺北市 =Taipei City</item>
+        <item>新北市 =New Taipei City</item>
+        <item>桃園市 =Taoyuan City</item>
+        <item>台中市 =Taichung City</item>
+        <item>台南市 =Tainan City</item>
+        <item>高雄市 =Kaohsiung City</item>
+        <item>基隆市 =Keelung City</item>
+        <item>新竹市 =Hsinchu City</item>
+        <item>嘉義市 =Chiayi City</item>
+        <item>新竹縣 =Hsinchu County</item>
+        <item>苗栗縣 =Miaoli County</item>
+        <item>彰化縣 =Changhua County</item>
+        <item>南投縣 =Nantou County</item>
+        <item>雲林縣 =Yunlin County</item>
+        <item>嘉義縣 =Chiayi County</item>
+        <item>屏東縣 =Pingtung County</item>
+        <item>宜蘭縣 =Yilan County</item>
+        <item>花蓮縣 =Hualien County</item>
+        <item>台東縣 =Taitung County</item>
+        <item>澎湖縣 =Penghu County</item>
+        <item>金門縣 =Kinmen County</item>
+        <item>連江縣 =Lienchiang County</item>
+        <!--全部国家对应城市,去除China,中國大陸避免China和Taiwan或者中國大陸和臺灣重复-->
+        <item>Taiwan =Taiwan</item>
+        <item>Australia =Australia</item>
+        <item>Brazil =Brazil</item>
+        <item>Canada =Canada</item>
+        <item>France =France</item>
+        <item>Hong Kong =Hong Kong</item>
+        <item>Indonesia =Indonesia</item>
+        <item>Japan =Japan</item>
+        <item>Macao =Macao</item>
+        <item>Malaysia =Malaysia</item>
+        <item>Myanmar =Myanmar</item>
+        <item>Peru =Peru</item>
+        <item>Philippines =Philippines</item>
+        <item>Russia =Russia</item>
+        <item>Singapore =Singapore</item>
+        <item>South Korea =South Korea</item>
+        <item>Thailand =Thailand</item>
+        <item>UK =UK</item>
+        <item>USA =USA</item>
+        <item>Vietnam =Vietnam</item>
+        <item>China =CN</item>
+        <item>臺灣 =Taiwan</item>
+        <item>澳大利亞 =Australia</item>
+        <item>巴西 =Brazil</item>
+        <item>加拿大 =Canada</item>
+        <item>法國 =France</item>
+        <item>香港 =Hong Kong</item>
+        <item>印度尼西亞 =Indonesia</item>
+        <item>日本 =Japan</item>
+        <item>澳門 =Macao</item>
+        <item>馬來西亞 =Malaysia</item>
+        <item>緬甸 =Myanmar</item>
+        <item>秘魯 =Peru</item>
+        <item>菲律賓 =Philippines</item>
+        <item>俄羅斯 =Russia</item>
+        <item>新加坡 =Singapore</item>
+        <item>韓國 =South Korea</item>
+        <item>泰國 =Thailand</item>
+        <item>英國 =UK</item>
+        <item>美國 =USA</item>
+        <item>越南 =Vietnam</item>
+        <item>中國大陸 =CN</item>
+
+    </string-array>
+
+    <!--二级菜单，因英文作为key，因为服务器存储的是英文，根据英文获取相应语言环境的值-->
+    <string-array name="area_second_show">
+        <item>Taipei City =Taipei City</item>
+        <item>New Taipei City =New Taipei City</item>
+        <item>Taoyuan City =Taoyuan City</item>
+        <item>Taichung City =Taichung City</item>
+        <item>Tainan City =Tainan City</item>
+        <item>Kaohsiung City =Kaohsiung City</item>
+        <item>Keelung City =Keelung City</item>
+        <item>Hsinchu City =Hsinchu City</item>
+        <item>Chiayi City =Chiayi City</item>
+        <item>Hsinchu County =Hsinchu County</item>
+        <item>Miaoli County =Miaoli County</item>
+        <item>Changhua County =Changhua County</item>
+        <item>Nantou County =Nantou County</item>
+        <item>Yunlin County =Yunlin County</item>
+        <item>Chiayi County =Chiayi County</item>
+        <item>Pingtung County =Pingtung County</item>
+        <item>Yilan County =Yilan County</item>
+        <item>Hualien County =Hualien County</item>
+        <item>Taitung County =Taitung County</item>
+        <item>Penghu County =Penghu County</item>
+        <item>Kinmen County =Kinmen County</item>
+        <item>Lienchiang County =Lienchiang County</item>
+        <!--全部国家对应城市-->
+        <item>Taiwan =Taiwan</item>
+        <item>Australia =Australia</item>
+        <item>Brazil =Brazil</item>
+        <item>Canada =Canada</item>
+        <item>France =France</item>
+        <item>Hong Kong =Hong Kong</item>
+        <item>Indonesia =Indonesia</item>
+        <item>Japan =Japan</item>
+        <item>Macao =Macao</item>
+        <item>Malaysia =Malaysia</item>
+        <item>Myanmar =Myanmar</item>
+        <item>Peru =Peru</item>
+        <item>Philippines =Philippines</item>
+        <item>Russia =Russia</item>
+        <item>Singapore =Singapore</item>
+        <item>South Korea =South Korea</item>
+        <item>Thailand =Thailand</item>
+        <item>UK =UK</item>
+        <item>USA =USA</item>
+        <item>Vietnam =Vietnam</item>
+        <item>China =CN</item>
+
+    </string-array>
+
+    <!--星座：注意arry中必须以摩羯座并以摩羯座结束-->
+    <string-array name="constellation">
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+    </string-array>
+
+</resources>
