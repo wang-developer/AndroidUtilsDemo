@@ -1,9 +1,11 @@
 package com.developer.wang.utils.glide.progress;
 
-import com.squareup.okhttp.Interceptor;
-import com.squareup.okhttp.Response;
+
 
 import java.io.IOException;
+
+import okhttp3.Interceptor;
+import okhttp3.Response;
 
 
 /**

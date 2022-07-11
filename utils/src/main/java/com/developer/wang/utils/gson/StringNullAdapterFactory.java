@@ -1,5 +1,6 @@
 package com.developer.wang.utils.gson;
 
+import com.google.gson.Gson;
 import com.google.gson.TypeAdapter;
 import com.google.gson.TypeAdapterFactory;
 import com.google.gson.reflect.TypeToken;
@@ -17,6 +18,6 @@ public class StringNullAdapterFactory<T> implements TypeAdapterFactory {
         if (rawType != String.class) {
             return null;
         }
-        return (TypeAdapter<T>) new JWStringNullAdapter();
+        return (TypeAdapter<T>) new StringNullAdapter();
     }
 }

@@ -1,11 +1,12 @@
 package com.developer.wang.utils.glide.progress;
 
 
-import com.squareup.okhttp.MediaType;
-import com.squareup.okhttp.ResponseBody;
+
 
 import java.io.IOException;
 
+import okhttp3.MediaType;
+import okhttp3.ResponseBody;
 import okio.Buffer;
 import okio.BufferedSource;
 import okio.ForwardingSource;

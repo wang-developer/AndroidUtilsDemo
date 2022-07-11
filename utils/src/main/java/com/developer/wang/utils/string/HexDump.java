@@ -85,21 +85,21 @@ public class HexDump {
 			24, 20, 16, 12, 8, 4, 0 };
 
 	public static String tablify(byte[] bytes) {
-		return (new JWHexDump()).new HexTablifier().format(JWHexDump.toHex(bytes));
+		return (new HexDump()).new HexTablifier().format(HexDump.toHex(bytes));
 	}
 
 	public static String tablify(byte[] bytes, int row) {
-		return (new JWHexDump()).new HexTablifier(row).format(JWHexDump
+		return (new HexDump()).new HexTablifier(row).format(HexDump
 				.toHex(bytes));
 	}
 
 	public static String tablify(byte[] bytes, int row, String pre) {
-		return (new JWHexDump()).new HexTablifier(row, pre).format(JWHexDump
+		return (new HexDump()).new HexTablifier(row, pre).format(HexDump
 				.toHex(bytes));
 	}
 
 	public static String tablify(String hex, int row, String pre, String post) {
-		return (new JWHexDump()).new HexTablifier(row, pre, post).format(hex);
+		return (new HexDump()).new HexTablifier(row, pre, post).format(hex);
 	}
 
 	private static String toHex(final long value, final int digitNum) {

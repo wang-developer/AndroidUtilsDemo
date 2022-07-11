@@ -8,7 +8,7 @@ import android.net.wifi.WifiManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import com.linknow.sensenow.common.utils.LogUtils;
+
 
 import java.io.IOException;
 
@@ -114,7 +114,7 @@ public class NetWorkUtils {
                 string = "可能是一个需要网页认证的wifi";
             else
                 string = "没有网路 ping不通";
-            LogUtils.INSTANCE.i("TAG","imSendError +"+string);
+            Log.i("TAG","imSendError +"+string);
 
             return (exitValue == 0);
         } catch (IOException | InterruptedException e) {

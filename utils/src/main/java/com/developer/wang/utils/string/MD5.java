@@ -21,7 +21,7 @@ public class MD5 {
     public static String getMD5(byte[] source) {
         try {
             MessageDigest md5 = MessageDigest.getInstance("MD5");
-            return JWHexDump.toHex(md5.digest(source));
+            return HexDump.toHex(md5.digest(source));
         } catch (Exception e) {
             throw new RuntimeException(e.getMessage(), e);
         }
@@ -40,7 +40,7 @@ public class MD5 {
     			md5.update(buffer, 0, numRead);    
     		}    
     		in.close();   
-    		hash = JWHexDump.toHex(md5.digest());
+    		hash = HexDump.toHex(md5.digest());
     	} catch (Exception e) {  
     		e.printStackTrace();  
     	} finally {
