@@ -25,11 +25,19 @@ public class LanguageUtils {
     private static final String TAG = LanguageUtils.class.getSimpleName();
     public static final String LANGUAGE_UK = "English";
     public static final String LANGUAGE_TRADITIONAL_CHINESE = "繁體中文";
+    public static final String LANGUAGE_SIMPLIFIED_CHINESE = "简体中文";
+    public static final String LANGUAGE_KOREAN = "한국어";
+    public static final String LANGUAGE_JAPANESE = "日本語";
+    public static final String LANGUAGE_GERMANY= "Deutsch";
 
     public static List<String> getLanguageList() {
         List<String> languageList = new ArrayList<>();
-//        languageList.add(LANGUAGE_UK);
+        languageList.add(LANGUAGE_UK);
         languageList.add(LANGUAGE_TRADITIONAL_CHINESE);
+        languageList.add(LANGUAGE_SIMPLIFIED_CHINESE);
+        languageList.add(LANGUAGE_KOREAN);
+        languageList.add(LANGUAGE_JAPANESE);
+        languageList.add(LANGUAGE_GERMANY);
         return languageList;
     }
 
@@ -46,9 +54,13 @@ public class LanguageUtils {
     private static Locale getCurrentLocale(String language) {
         if (language.equals(LANGUAGE_UK)) return Locale.UK;
         if (language.equals(LANGUAGE_TRADITIONAL_CHINESE)) return Locale.TRADITIONAL_CHINESE;
+        if (language.equals(LANGUAGE_SIMPLIFIED_CHINESE)) return Locale.TRADITIONAL_CHINESE;
+        if (language.equals(LANGUAGE_KOREAN)) return Locale.KOREAN;
+        if (language.equals(LANGUAGE_JAPANESE)) return Locale.JAPANESE;
+        if (language.equals(LANGUAGE_GERMANY)) return Locale.GERMANY;
         //return Locale.getDefault();
         //默认不随系统，默认为繁体
-        return Locale.TRADITIONAL_CHINESE;
+        return Locale.UK;
     }
 
     public static String getDefaultLanguage(Context context) {
@@ -56,17 +68,17 @@ public class LanguageUtils {
             //如果没有设置过则跟随系统，此时如果系统设置的语言如果当前app内部没有则显示英文
             List<String> languageLocalList = getLanguageLocalList();
             String localLanguage = Locale.getDefault().getLanguage() + "_" + Locale.getDefault().getCountry();
-            Log.i(TAG,"getDefaultLanguage languageLocalList : " + languageLocalList.toString());
-            Log.i(TAG,"getDefaultLanguage localLanguage 11 : " + localLanguage);
+
             //繁体香港在设置中不可见，但是如果没有设置过则系统设置为繁体香港则不默认显示英语，应该显示繁体语言
             //后续设置中添加繁体香港在做相应处理
             if(localLanguage.contains("zh"))localLanguage = "zh_TW";
             if(localLanguage.contains("en"))localLanguage = "en_GB";
-            Log.i(TAG,"getDefaultLanguage localLanguage 22 : " + localLanguage);
+            if(localLanguage.contains("de"))localLanguage = "de_DE";
+
             if(languageLocalList.contains(localLanguage)){
                 return getLanguageFromLocal(localLanguage);
             }
-            return LANGUAGE_TRADITIONAL_CHINESE;
+            return LANGUAGE_UK;
         }
         return LocalSwitchBtnUtils.getLanguageChoice(context);
     }
@@ -89,7 +101,7 @@ public class LanguageUtils {
             }
         }
         //异常返回繁体
-        return LANGUAGE_TRADITIONAL_CHINESE;
+        return LANGUAGE_UK;
     }
 
     /**
@@ -100,6 +112,26 @@ public class LanguageUtils {
         Locale current = context.getResources().getConfiguration().locale;
         Locale system = getCurrentLocale(LocalSwitchBtnUtils.getLanguageChoice(context));
         return current.equals(system);
+    }
+
+    /**
+     * 是否和系统设置的语言相同 只判断 Language
+     * @param context
+     * @return
+     */
+    public static boolean isSameLanguageWithSystemOfLanguage(Context context){
+        Locale current = context.getResources().getConfiguration().locale;
+        Locale system = getCurrentLocale(LocalSwitchBtnUtils.getLanguageChoice(context));
+        return current.getLanguage().equals(system.getLanguage());
+    }
+
+    /**
+     * 获取系统语言
+     * @param context
+     * @return
+     */
+    public static Locale getSystemLocal(Context context){
+        return context.getResources().getConfiguration().locale;
     }
 
     public static boolean isEnglishLanguageWithCurrentLanguage(Context context){
@@ -120,7 +152,6 @@ public class LanguageUtils {
         }
         Log.i(TAG,"updateLanguageConfiguration to set language : " + locale);
         resources.updateConfiguration(config, dm);
-
 
     }
 
